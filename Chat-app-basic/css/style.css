@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    background-color: #635ca1;
+    font-family: 'Lato';
+}
+
+/*--------Logo--------*/
+
+.logo{
+    display: block;
+    margin:auto;
+    height:60px;
+    width: 60px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+h2{
+    color:whitesmoke;
+    text-align: center;
+    padding:10px;
+}
+
+/*--------Chat Container--------*/
+
+.container{
+    background-color: whitesmoke;
+    border:3px solid #9d92ff;
+    height : 60vh;
+    width:65%;
+    padding: 15px;
+    border-radius: 15px;
+    overflow-y: auto;
+    margin:auto;
+}
+
+.message{
+    background-color: #635ca1;
+    border:3px solid #9d92ff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+    color:white;
+    padding-right:10px;
+    max-width: 600px;
+    overflow: auto;
+}
+
+.left{
+    float:left;
+    clear: both;
+    margin-bottom: 15px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+.right{
+    float:right;
+    clear: both;
+    margin-bottom: 15px;
+    border-radius: 10px 0px 10px 10px;
+}
+
+/*--------Send Bar--------*/
+
+.send-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    max-width: 900px;
+    width:100%;
+}
+
+.msgInp{
+    border-radius: 10px;
+    background-color: #ffffff;
+    border:3px solid #9d92ff;
+    height: 32px;
+    padding-left:10px;
+    width: 80%;
+}
+
+.btn{
+    cursor: pointer;
+    height: 39px;
+    width:80px;
+    color:#ffffff;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #9d92ff;
+    border:3px solid #9d92ff;
+}
+
+@media only screen and (max-width: 1260px){
+    .msgInp{
+        width: 60%;
+    }
+    .message{
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 968px){
+    .msgInp{
+        width: 45%;
+    }
+    .message{
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .msgInp{
+        width: 200px;
+    }
+    .btn{
+        width:60px;
+        font-size: 14px;
+    }
+    .message{
+        max-width: 150px;
+    }
+}
